@@ -33,7 +33,8 @@ class ForgetPassword extends StatelessWidget {
          Container(
           height: 55.h,
           width: 327,
-          child:const  ApTextFormField(hintText: 'Phone Number or Email')),
+        //  child:const  ApTextFormField(hintText: 'Phone Number or Email')
+        ),
         const Spacer(),
           Container(
             padding: const EdgeInsets.only(bottom: 5),

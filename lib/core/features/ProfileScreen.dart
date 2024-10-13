@@ -49,13 +49,13 @@ Container(
   width: 327,
   child: Column(
     children: [
-      const ApTextFormField(hintText: 'FullName'),
+     // const ApTextFormField(hintText: 'FullName'),
       spaceVertical(20),
-      const ApTextFormField(hintText: 'Email'),
+      //const ApTextFormField(hintText: 'Email'),
        spaceVertical(20),
-       const ApTextFormField(hintText: 'Password'),
+       //const ApTextFormField(hintText: 'Password'),
        spaceVertical(20),
-       const ApTextFormField(hintText: 'Phone'),
+       //const ApTextFormField(hintText: 'Phone'),
 
     ],
   ),

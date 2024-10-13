@@ -45,11 +45,11 @@ class SignUp extends StatelessWidget {
             height: 197.h,
             child: Column(
               children: [
-                const ApTextFormField(hintText: 'Email',),
+              //  const ApTextFormField(hintText: 'Email',),
                spaceVertical(15),
-               const ApTextFormField(hintText: 'Password',),
+              // const ApTextFormField(hintText: 'Password',),
                spaceVertical(15),
-               const ApTextFormField(hintText: 'Ypur Number',suffixIcon: Icon(Icons.countertops),),
+              // const ApTextFormField(hintText: 'Ypur Number',suffixIcon: Icon(Icons.countertops),),
               ],
             ),
           ),

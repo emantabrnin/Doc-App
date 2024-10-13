@@ -12,6 +12,8 @@ class ApTextFormField extends StatelessWidget {
   final bool? isObscureText;
   final Widget? suffixIcon;
   final Color? backgroundColor;
+   final TextEditingController? controller;
+  final Function(String?) validator;
   const ApTextFormField({super.key, 
   this.contentPadding,
    this.focusedBorder,
@@ -21,14 +23,17 @@ class ApTextFormField extends StatelessWidget {
      required this.hintText, 
      this.isObscureText,
       this.suffixIcon, 
-      this.backgroundColor});
+      this.backgroundColor,
+        this.controller,
+    required this.validator,
+      });
 
   @override
   Widget build(BuildContext context) {
     return Material(
       child: Flexible(
-        child: TextField(
-          controller: TextEditingController(),
+        child: TextFormField(
+          controller: controller,
           decoration:  InputDecoration(
             isDense: true,
             //contentPadding:  EdgeInsets.symmetric(horizontal: 5.w , vertical: 7.h) ,
@@ -69,6 +74,9 @@ class ApTextFormField extends StatelessWidget {
           ),
           obscureText:  isObscureText?? true,
           style: TextStyles.font14DarkBlueMedium,
+        validator: (value) {
+        return validator(value);
+      }
         ),
       ),
     );
